@@ -1,7 +1,7 @@
 {
-  "id": "com.kameyu.my_mod",
+  "id": "com.kameyu.weather_control",
   "name": "Weather Control",
   "version": "@PROJECT_VERSION@",
   "author": "Kameyu",
-  "description": "A simple mod that allows the user to change the weather between rain, fog and sunny."
+  "description": "A simple mod that allows the user to change the weather between clear, rain, and fog, with fog settings."
 }
