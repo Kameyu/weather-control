@@ -9,6 +9,17 @@ endif ()
 
 project(weather_control VERSION 1.0.0 LANGUAGES CXX)
 
+# Force iterator debug off (fixes C2440 on MSVC 14.51 Insider even in Release)
+if(MSVC)
+    add_compile_definitions(
+        _ITERATOR_DEBUG_LEVEL=0
+        _HAS_ITERATOR_DEBUGGING=0
+        NOMINMAX
+        WIN32_LEAN_AND_MEAN
+    )
+    add_compile_options(/Zc:__cplusplus /Zc:preprocessor /permissive-)
+endif()
+
 # The Dusklight version to build against: a release tag (e.g. "v2.0.0") or a commit SHA.
 if (NOT DUSKLIGHT_VERSION)
     set(DUSKLIGHT_VERSION "v2.0.2")
