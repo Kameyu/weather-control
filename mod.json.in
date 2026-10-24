@@ -1,7 +1,7 @@
 {
-  "id": "com.example.my_mod",
-  "name": "My Mod",
+  "id": "com.kameyu.my_mod",
+  "name": "Weather Control",
   "version": "@PROJECT_VERSION@",
-  "author": "You",
-  "description": "An example Dusklight mod"
+  "author": "Kameyu",
+  "description": "A simple mod that allows the user to change the weather between rain, fog and sunny."
 }
